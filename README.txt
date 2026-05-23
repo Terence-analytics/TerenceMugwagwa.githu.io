@@ -1,32 +1,33 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Terence Analytics Portfolio
+===========================
 
+This repository contains the GitHub Pages website for Terence Analytics, a data analytics portfolio that presents projects across Excel, Power BI, Tableau, Python, SQL, and machine learning.
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+The site is a static HTML/CSS/JavaScript portfolio based on the Massively template by HTML5 UP. It is designed to be deployed directly from the repository through GitHub Pages.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Site structure
+--------------
 
-(* = not included)
+- index.html: Main portfolio landing page and project gallery.
+- assets/: CSS, JavaScript, Sass, and webfont files used by the HTML5 UP template.
+- images/: Portfolio images and visual assets used by the site.
+- generic.html and elements.html: Template reference pages retained from the original theme.
 
-AJ
-aj@lkn.io | @ajlkn
+Purpose
+-------
 
+The portfolio helps visitors quickly understand Terence's analytics background, technical toolkit, and project areas. Project buttons link to the related work in the Terence-analytics/My_Projects repository.
 
-Credits:
+Deployment
+----------
 
-	Demo Images:
-		Unsplash (unsplash.com)
+GitHub Pages can serve this site directly from the repository root. Keep index.html, assets/, and images/ at the root level so relative paths continue to work.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+Credits
+-------
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Design template: Massively by HTML5 UP
+https://html5up.net
+
+Icons: Font Awesome
+JavaScript utilities: jQuery, Scrollex, and Responsive Tools

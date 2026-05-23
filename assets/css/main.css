@@ -3308,6 +3308,11 @@ input, select, textarea {
 		transition: opacity 1s ease, transform 1s ease;
 		position: relative;
 		cursor: default;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url("../../images/prof_image.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 		text-align: center;
 		z-index: 1;
 		min-height: 100vh;
@@ -3471,6 +3476,7 @@ input, select, textarea {
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
 				min-height: 80vh;
+				background-attachment: scroll;
 			}
 
 				#intro h1 {
