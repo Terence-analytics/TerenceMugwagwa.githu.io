@@ -3951,6 +3951,230 @@ input, select, textarea {
 
 		}
 
+/* Portfolio Enhancements */
+
+	#intro {
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		padding: 7rem 3rem 8rem 3rem;
+	}
+
+		#intro .eyebrow,
+		.section-kicker,
+		.project-tools {
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 0.8rem;
+			font-style: normal;
+			font-weight: 900;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+		}
+
+		#intro .eyebrow {
+			color: #18bfef;
+			margin: 0 0 1rem 0;
+		}
+
+		#intro p {
+			max-width: 46rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#intro .hero-actions {
+			margin-top: 1.25rem;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+		}
+
+	#main {
+		background: #f7f8fa;
+	}
+
+	#main > .spotlight-section,
+	#main > .skills-section,
+	#main > .portfolio-projects,
+	#main > .cta-section {
+		background: #ffffff;
+	}
+
+	.spotlight-section header.major,
+	.skills-section header.major,
+	.portfolio-projects header.major,
+	.cta-section header.major {
+		max-width: 50rem;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.section-kicker {
+		color: #0f766e;
+		display: block;
+		margin-bottom: 0.75rem;
+	}
+
+	.skills-grid {
+		display: grid;
+		gap: 1.25rem;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.skill-card {
+		background: #f7f8fa;
+		border: 1px solid #e5e7eb;
+		border-radius: 8px;
+		padding: 1.5rem;
+	}
+
+		.skill-card h3 {
+			font-size: 0.95rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.skill-card p {
+			margin: 0;
+			text-align: left;
+		}
+
+	.project-grid {
+		display: grid;
+		gap: 1.5rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.project-card {
+		background: #ffffff;
+		border: 1px solid #e5e7eb;
+		border-radius: 8px;
+		box-shadow: 0 0.8rem 2rem rgba(30, 37, 45, 0.08);
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+	}
+
+		.project-card:hover {
+			border-color: rgba(24, 191, 239, 0.55);
+			box-shadow: 0 1.2rem 2.6rem rgba(30, 37, 45, 0.13);
+			transform: translateY(-4px);
+		}
+
+		.project-card .project-image {
+			border-bottom: 0;
+			display: block;
+			height: 13rem;
+			overflow: hidden;
+		}
+
+			.project-card .project-image img {
+				display: block;
+				height: 100%;
+				object-fit: cover;
+				width: 100%;
+				transition: transform 0.25s ease;
+			}
+
+			.project-card:hover .project-image img {
+				transform: scale(1.04);
+			}
+
+	.project-content {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		padding: 1.5rem;
+	}
+
+		.project-content h3 {
+			font-size: 1.2rem;
+			line-height: 1.25;
+			margin-bottom: 0.85rem;
+		}
+
+		.project-content p {
+			font-size: 0.92rem;
+			line-height: 1.75;
+			margin-bottom: 0.8rem;
+			text-align: left;
+		}
+
+		.project-content .actions {
+			margin-top: auto;
+		}
+
+	.project-tools {
+		color: #0f766e;
+		margin-bottom: 0.65rem !important;
+	}
+
+	.cta-section {
+		text-align: center;
+	}
+
+		input[type="submit"].primary,
+		input[type="reset"].primary,
+		input[type="button"].primary,
+		button.primary,
+		.button.primary {
+			background-color: #0f766e;
+			box-shadow: none;
+			color: #ffffff !important;
+		}
+
+			input[type="submit"].primary:hover,
+			input[type="reset"].primary:hover,
+			input[type="button"].primary:hover,
+			button.primary:hover,
+			.button.primary:hover {
+				background-color: #18bfef;
+			}
+
+	@media screen and (max-width: 980px) {
+
+		.skills-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.project-grid {
+			grid-template-columns: 1fr;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#intro {
+			padding: 4rem 1.5rem 3rem 1.5rem;
+			min-height: 90vh;
+		}
+
+			#intro h1 {
+				font-size: 2.8rem;
+			}
+
+			#intro .actions {
+				display: flex;
+			}
+
+		.skills-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.project-card .project-image {
+			height: 11rem;
+		}
+
+		.project-content {
+			padding: 1.25rem;
+		}
+
+	}
+
 /* Footer */
 
 	#footer {
